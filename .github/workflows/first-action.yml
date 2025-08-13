@@ -1,10 +1,13 @@
-name : Vinayak_First_Action
-on : workflow_dispatch
-jobs :
+name: Vinayak_First_Action
+
+on: workflow_dispatch
+
+jobs:
   vinayak_first_job:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      -name: Print greeting
-       run: echo "Greeting"
-      -name: Print Bye
-       run: echo "Bye Bye"
+      - name: Print greeting
+        run: echo "Greeting"
+
+      - name: Print Bye
+        run: echo "Bye Bye"
